@@ -1,0 +1,5 @@
+batch_size,epoch,dropout,l2,cell
+ 2 , 40 , 0.1 , 1e-07 , GRU
+ 32 , 20 , 0.2 , 0.001 , biGRU
+ 4 , 10 , 0.0 , 1e-07 , biLSTM
+ 4 , 30 , 0.2 , 1e-05 , biGRU
