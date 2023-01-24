@@ -40,4 +40,10 @@ In Eq 4, 𝛼 is a real number between 0 and 1 to define the relative weight of 
 
 In Eq 5, recall is considered 𝛽 times more important than precision. In this study, 𝛽 was set to 2.
 
-# How to 
+# Datasets and input format
+
+  We evaluated the proposed architectures in two experimental setups. In the first setup, Alzheimer’s Disease Neuroimaging Initiative (ADNI) dataset was utilized to train and test the proposed architectures using the longitudinal multi-modal and the cross-sectional demographic data. In the second setup, the models were trained on the entire ADNI longitudinal and cross-sec-tional data and tested on National Alzheimer’s Coordinating Center (NACC) dataset.
+  
+  To have ADNI, you need to request an access for it https://adni.loni.usc.edu/
+  
+  To have NACC, you need to request an access for it https://naccdata.org/
