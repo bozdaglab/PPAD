@@ -10,7 +10,7 @@
 
 𝑦′=𝜎(𝑊1(𝑅𝑒𝐿𝑈(𝑊2(𝑥𝑡̂⊕𝐷)+𝑏2))+𝑏1) .............................(2)
 
-In Eq 7, 𝑦′ represents the predicted diagnosis, 𝑊1 and 𝑊2 are the trainable linear transformation matrices, and 𝑏1 and 𝑏2 are the bias vectors.
+In Eq 2, 𝑦′ represents the predicted diagnosis, 𝑊1 and 𝑊2 are the trainable linear transformation matrices, and 𝑏1 and 𝑏2 are the bias vectors.
 
 To run PPAD, please have PPAD.ipynb, (dummy_lon_data_train.pkl 
 
