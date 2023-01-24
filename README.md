@@ -47,3 +47,5 @@ In Eq 5, recall is considered 𝛽 times more important than precision. In this 
   To have ADNI, you need to request an access for it https://adni.loni.usc.edu/
   
   To have NACC, you need to request an access for it https://naccdata.org/
+  
+  For dataset format, 
