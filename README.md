@@ -39,3 +39,5 @@ In Eq 4, 𝛼 is a real number between 0 and 1 to define the relative weight of 
 𝐹𝛽 = (1+𝛽2) ∙ (precision∙recall) / (𝛽2.precision+recall) .......(5)
 
 In Eq 5, recall is considered 𝛽 times more important than precision. In this study, 𝛽 was set to 2.
+
+# How to 
