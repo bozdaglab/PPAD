@@ -54,7 +54,7 @@ Both PPAD sample dataset and PPAD-AE folders contain the following pkl files:
  
  # How to run PPAD
  
- To runn PPAD, you have to have all following file in the same directory:
+ To runn PPAD, you have to have the following files in the same directory:
  
   - PPAD.ipynb
   - longitudinal_data_train.pkl
@@ -63,6 +63,21 @@ Both PPAD sample dataset and PPAD-AE folders contain the following pkl files:
   - longitudinal_data_test.pkl
   - label_test.pkl
   - demographic_data_test.pkl
-  - PPAD_hp_df.csv which represents values of hyperparameter that have been tunned
+  - PPAD_hp_df.csv which represents values of hyperparametera that have been tunned
  
- .Although 
+After you put all files in the same directory, open and run PPAD.ipynb using Jupyter Notebook. PPAD will be trained and tested five times and results will be generated as csv file with the following convension (x_y_PPAD.csv) where x means number of visits used to train the model and y means future visit for prediction.
+
+# How to run PPAD-AE
+ 
+ To runn PPAD-AE, you have to have the following files in the same directory:
+ 
+  - PPAD-AE.ipynb
+  - longitudinal_data_train.pkl
+  - label_train.pkl 
+  - demographic_data_train.pkl
+  - longitudinal_data_test.pkl
+  - label_test.pkl
+  - demographic_data_test.pkl
+  - PPAD_hp_df.csv which represents values of hyperparametera that have been tunned
+ 
+After you put all files in the same directory, open and run PPAD-AE.ipynb using Jupyter Notebook. PPAD-AE will be trained and tested five times and results will be generated as csv file with the following convension (x_y_PPAD-AE.csv) where x means number of visits used to train the model and y means future visit for prediction.
