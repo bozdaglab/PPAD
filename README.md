@@ -53,3 +53,16 @@ Both PPAD sample dataset and PPAD-AE folders contain the following pkl files:
  All codes are compatible with tensorflow version 2.4.1, keras version 2.4.3 and Pyhton 3.8.5.
  
  # How to run PPAD
+ 
+ To runn PPAD, you have to have all following file in the same directory:
+ 
+  - PPAD.ipynb
+  - longitudinal_data_train.pkl
+  - label_train.pkl 
+  - demographic_data_train.pkl
+  - longitudinal_data_test.pkl
+  - label_test.pkl
+  - demographic_data_test.pkl
+  - PPAD_hp_df.csv which represents values of hyperparameter that have been tunned
+ 
+ .Although 
