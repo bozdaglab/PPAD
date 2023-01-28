@@ -50,21 +50,20 @@ Both PPAD and PPAD-AE sample dataset folders contain the following pkl files:
   
  # How to generate pkl files
  
- Although I provided you with sample pkl files, you can use pkl_files_preperation.ipynb with the following assumptions:
+ Although sample pkl files are provided, pkl_files_preperation.ipynb can be used to generate pkl files from raw files with the following assumptions:
   - You have access to ADNI dataset https://adni.loni.usc.edu/, and you already downloaded ADNI_Merge.csv file.
-  - You preprocessed ADNI_Merge.csv file (removing unnecessary columns, taking care of NAN and missing values, removing patient with single visit, and removing Normal patients).
-  - you divided ADNI_Merge.csv into two files: longitudinal_data.csv and demographic_data.csv.
+  - You preprocessed ADNI_Merge.csv file (removing unnecessary columns, taking care of NAN and missing values, removing patients with single visit, and removing patients diagnoses as cognitively normal).
+  - ADNI_Merge.csv is split into two files: longitudinal_data.csv and demographic_data.csv.
   - longitudinal_data.csv should have 'RID', 'VISCODEE', 'DX, and at least one longitudinal feature. In this file, each record represents one visit, so same RID can have multiple visits.
   - demographic_data.csv should have 'RID' and at least one demographic feature. In this file, each record represents demographic data for one patient.
   - All files (pkl_files_preperation.ipynb, longitudinal_data.csv, and demographic_data.csv) should in the same directory.
   - Open and run pkl_files_preperation.ipynb using Jupyter Notebook. You will be asked to determine the number of visits that you would like to use to train the model and the number of future visits that you would like to predict thier diagnosis.
-  - For PPAD, the number of future visits that you would like to predict thier diagnosis is always one.
-  - If the raw dataset you provid (ongitudinal_data.csv and demographic_data.csv) is not carefully preprocesses, you are going to get an error.
-  - If the number of visits that you would like to use to train the model and the number of future visits that you would like to predict thier diagnosis can not be created due to lack of visits, you are going to get an error.
+  - For PPAD, the number of future visits that you would like to predict thier diagnosis is always 1.
 
-I provided you with sample of longitudinal_data.csv and demographic_data.csv which can be found in Raw data sample folder
 
-After you run the the code without errors, following files will be generated:
+Sample of longitudinal_data.csv and demographic_data.csv are provided in Raw data sample folder
+
+After running the the code without any errors, following files will be generated:
  - longitudinal_data_train.pkl
 
  - label_train.pkl 
@@ -79,11 +78,11 @@ After you run the the code without errors, following files will be generated:
  
  # Compitability
  
- All codes are compatible with tensorflow version 2.4.1, keras version 2.4.3 and Pyhton 3.8.5.
+ All codes are compatible with Tensorflow version 2.4.1, Keras version 2.4.3 and Python 3.8.5.
  
  # How to run PPAD
  
- To runn PPAD, you have to have the following files in the same directory:
+ To run PPAD, you have to have the following files in the same directory:
  
   - PPAD.ipynb
   - longitudinal_data_train.pkl
@@ -94,7 +93,7 @@ After you run the the code without errors, following files will be generated:
   - demographic_data_test.pkl
   - hp_df.csv which represents values of hyperparameters that have been tuned
  
-After you put all files in the same directory, open and run PPAD.ipynb using Jupyter Notebook. PPAD will be trained and tested five times and results will be generated as csv file with the following format (x_y_PPAD-AE.csv) where x means the number of visits that have been used to train the model and y means the number of future visits for prediction.
+After you put all files in the same directory, open and run PPAD.ipynb using Jupyter Notebook. PPAD will be trained and tested five times and results will be generated as csv file with the following format (x_y_PPAD.csv) where x means the number of visits that have been used to train the model and y means the number of future visits for prediction.
 
 To change values of hyperparameters, open hp_df.csv and change values. The values should be as following:
  - batch_size: integer
