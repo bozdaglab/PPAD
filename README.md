@@ -40,13 +40,13 @@ Both PPAD sample dataset and PPAD-AE folders contain the following pkl files:
 
  - label_train.pkl which represents labels of traing data 
 
-demographic_data_train.pkl which represents demographic training data
+ - demographic_data_train.pkl which represents demographic training data
 
-longitudinal_data_test.pkl which represents longitudinal test data
+ - longitudinal_data_test.pkl which represents longitudinal test data
 
-label_test.pkl which represents labels of test data
+ - label_test.pkl which represents labels of test data
 
-demographic_data_test.pkl which represents demographic test data
+ - demographic_data_test.pkl which represents demographic test data
   
  # Compitability
  
