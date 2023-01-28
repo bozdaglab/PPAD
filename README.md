@@ -48,6 +48,14 @@ Both PPAD sample dataset and PPAD-AE folders contain the following pkl files:
 
  - demographic_data_test.pkl which represents demographic test data
   
+ # How to generate pkl files
+ 
+ Although I provided you with sample pkl files, you can use pkl_files_preperation.ipynb with the following assumptions:
+  - You have access to ADNI dataset and you already downloaded ADNI_Merge.csv file.
+  - You preprocessed ADNI_Merge.csv file (removing unnecessary columns, taking care of NAN and missing values, removing patient with single visit, and removing Normal patients).
+  - Divided ADNI_Merge.csv into two files: longitudinal_data.csv and demographic_data.csv.
+  - longitudinal_data.csv should have 'RID', 'VISCODEE', 'DX, and at least one longitudinal feature. In this file, each record represents one visit, so same RID can have multiple visits.
+  - demographic_data.csv should have 'RID' and at least one demographic feature. In this file, each record represents demographic data for one patient.
  # Compitability
  
  All codes are compatible with tensorflow version 2.4.1, keras version 2.4.3 and Pyhton 3.8.5.
@@ -65,7 +73,7 @@ Both PPAD sample dataset and PPAD-AE folders contain the following pkl files:
   - demographic_data_test.pkl
   - PPAD_hp_df.csv which represents values of hyperparametera that have been tunned
  
-After you put all files in the same directory, open and run PPAD.ipynb using Jupyter Notebook. PPAD will be trained and tested five times and results will be generated as csv file with the following convension (x_y_PPAD.csv) where x means number of visits used to train the model and y means future visit for prediction.
+After you put all files in the same directory, open and run PPAD.ipynb using Jupyter Notebook. PPAD will be trained and tested five times and results will be generated as csv file with the following convension (x_y_PPAD-AE.csv) where x means the number of visits that have been used to train the model and y means the number of future visits for prediction.
 
 # How to run PPAD-AE
  
@@ -80,4 +88,4 @@ After you put all files in the same directory, open and run PPAD.ipynb using Jup
   - demographic_data_test.pkl
   - PPAD_hp_df.csv which represents values of hyperparametera that have been tunned
  
-After you put all files in the same directory, open and run PPAD-AE.ipynb using Jupyter Notebook. PPAD-AE will be trained and tested five times and results will be generated as csv file with the following convension (x_y_PPAD-AE.csv) where x means number of visits used to train the model and y means future visit for prediction.
+After you put all files in the same directory, open and run PPAD-AE.ipynb using Jupyter Notebook. PPAD-AE will be trained and tested five times and results will be generated as csv file with the following convension (x_y_PPAD-AE.csv) where x means the number of visits that have been used to train the model and y means the number of future visits for prediction.
