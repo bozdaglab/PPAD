@@ -34,7 +34,7 @@ The training and test demographic data format is given where data is stored as a
     
 The training and test label data format is given where data is stored as a list containing 3 dimensionals tensors such as [number of samples , number of visits , 1] where the third dimension can be 0 (MCI) or 1 (Dementia).
 
-Both PPAD sample dataset and PPAD-AE folders contain the following pkl files:
+Both PPAD and PPAD-AE sample dataset folders contain the following pkl files:
 
  - longitudinal_data_train.pkl which represents longitudinal training data
 
@@ -61,6 +61,8 @@ Both PPAD sample dataset and PPAD-AE folders contain the following pkl files:
   - For PPAD, the number of future visits that you would like to predict thier diagnosis is always one.
   - If the raw dataset you provid (ongitudinal_data.csv and demographic_data.csv) is not carefully preprocesses, you are going to get an error.
   - If the number of visits that you would like to use to train the model and the number of future visits that you would like to predict thier diagnosis can not be created due to lack of visits, you are going to get an error.
+
+I provided you with sample of longitudinal_data.csv and demographic_data.csv which can be found in Raw data sample folder
 
 After you run the the code without errors, following files will be generated:
  - longitudinal_data_train.pkl
