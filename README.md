@@ -90,9 +90,9 @@ After you run the the code without errors, following files will be generated:
   - longitudinal_data_test.pkl
   - label_test.pkl
   - demographic_data_test.pkl
-  - PPAD_hp_df.csv which represents values of hyperparametera that have been tunned
+  - PPAD_hp_df.csv which represents values of hyperparameters that have been tuned
  
-After you put all files in the same directory, open and run PPAD.ipynb using Jupyter Notebook. PPAD will be trained and tested five times and results will be generated as csv file with the following convension (x_y_PPAD-AE.csv) where x means the number of visits that have been used to train the model and y means the number of future visits for prediction.
+After you put all files in the same directory, open and run PPAD.ipynb using Jupyter Notebook. PPAD will be trained and tested five times and results will be generated as csv file with the following format (x_y_PPAD-AE.csv) where x means the number of visits that have been used to train the model and y means the number of future visits for prediction.
 
 # How to run PPAD-AE
  
@@ -105,6 +105,6 @@ After you put all files in the same directory, open and run PPAD.ipynb using Jup
   - longitudinal_data_test.pkl
   - label_test.pkl
   - demographic_data_test.pkl
-  - PPAD_hp_df.csv which represents values of hyperparametera that have been tunned
+  - PPAD_hp_df.csv which represents values of hyperparameters that have been tuned
  
-After you put all files in the same directory, open and run PPAD-AE.ipynb using Jupyter Notebook. PPAD-AE will be trained and tested five times and results will be generated as csv file with the following convension (x_y_PPAD-AE.csv) where x means the number of visits that have been used to train the model and y means the number of future visits for prediction.
+After you put all files in the same directory, open and run PPAD-AE.ipynb using Jupyter Notebook. PPAD-AE will be trained and tested five times and results will be generated as csv file with the following format (x_y_PPAD-AE.csv) where x means the number of visits that have been used to train the model and y means the number of future visits for prediction.
