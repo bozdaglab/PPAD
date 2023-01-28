@@ -33,6 +33,20 @@ The training and test longitudinal data format is given where data is stored as 
 The training and test demographic data format is given where data is stored as a list containing other lists such that each inner list represents demographic features for one sample.
     
 The training and test label data format is given where data is stored as a list containing 3 dimensionals tensors such as [number of samples , number of visits , 1] where the third dimension can be 0 (MCI) or 1 (Dementia).
+
+Both PPAD sample dataset and PPAD-AE folders contain the following pkl files:
+
+longitudinal_data_train.pkl which represents longitudinal training data
+
+label_train.pkl which represents labels of traing data 
+
+demographic_data_train.pkl which represents demographic training data
+
+longitudinal_data_test.pkl which represents longitudinal test data
+
+label_test.pkl which represents labels of test data
+
+demographic_data_test.pkl which represents demographic test data
   
  # Compitability
  
