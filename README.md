@@ -26,8 +26,10 @@ PPAD-AE is a deep learning architecture based on Recurrent Neural Networks (RNN)
 
   We evaluated the proposed architectures in two experimental setups. In the first setup, Alzheimer’s Disease Neuroimaging Initiative (ADNI) dataset was utilized to train and test the proposed architectures using the longitudinal multi-modal and the cross-sectional demographic data. In the second setup, the models were trained on the entire ADNI longitudinal and cross-sec-tional data and tested on National Alzheimer’s Coordinating Center (NACC) dataset.
   
-  To have ADNI, you need to request an access for it https://adni.loni.usc.edu/
+  To get ADNI, you need to request an access for it https://adni.loni.usc.edu/
   
-  To have NACC, you need to request an access for it https://naccdata.org/
+  To get NACC, you need to request an access for it https://naccdata.org/
+  
+  The input longitudinal data and label format is given where data is stored as a list containing 3 dimensionals tensors such as [number of samples x number of visits x number of longitudinal feature_in_each_vist].
   
   For dataset format, 
