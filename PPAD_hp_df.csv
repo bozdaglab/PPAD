@@ -1,0 +1,5 @@
+batch_size,epoch,dropout,l2,cell
+2,40,0.1,1.00E-07, GRU
+,,,,
+,,,,
+,,,,
