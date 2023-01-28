@@ -36,9 +36,9 @@ The training and test label data format is given where data is stored as a list 
 
 Both PPAD sample dataset and PPAD-AE folders contain the following pkl files:
 
- -longitudinal_data_train.pkl which represents longitudinal training data
+ - longitudinal_data_train.pkl which represents longitudinal training data
 
-#  label_train.pkl which represents labels of traing data 
+ - label_train.pkl which represents labels of traing data 
 
 demographic_data_train.pkl which represents demographic training data
 
