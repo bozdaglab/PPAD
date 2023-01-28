@@ -101,7 +101,7 @@ To change values of hyperparameters, open hp_df.csv and change values. The value
  - epoch: integer
  - dropout: float number
  - l2: float number 
- - cell: one of these value [GRU, LSTM, biGRU, biLSTM]
+ - cell: one of these values [GRU, LSTM, biGRU, biLSTM]
  
 
 # How to run PPAD-AE
@@ -118,3 +118,10 @@ To change values of hyperparameters, open hp_df.csv and change values. The value
   - hp_df.csv which represents values of hyperparameters that have been tuned
  
 After you put all files in the same directory, open and run PPAD-AE.ipynb using Jupyter Notebook. PPAD-AE will be trained and tested five times and results will be generated as csv file with the following format (x_y_PPAD-AE.csv) where x means the number of visits that have been used to train the model and y means the number of future visits for prediction.
+
+To change values of hyperparameters, open hp_df.csv and change values. The values should be as following:
+ - batch_size: integer
+ - epoch: integer
+ - dropout: float number
+ - l2: float number 
+ - cell: one of these values [GRU, LSTM, biGRU, biLSTM]
