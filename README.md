@@ -30,6 +30,14 @@ PPAD-AE is a deep learning architecture based on Recurrent Neural Networks (RNN)
   
   To get NACC, you need to request an access for it https://naccdata.org/
   
-  The input longitudinal data and label format is given where data is stored as a list containing 3 dimensionals tensors such as [number of samples x number of visits x number of longitudinal feature_in_each_vist].
+  The training and test longitudinal data format is given where data is stored as a list containing 3 dimensionals tensors such as [number of samples , number of visits , number of longitudinal feature in each vist].
   
-  For dataset format, 
+    The training and test demographic data format is given where data is stored as a list containing other lists such that each inner list represents demographic features for one sample.
+    
+    The training and test label data format is given where data is stored as a list containing 3 dimensionals tensors such as [number of samples , number of visits , 1] where the third dimension can be 0 (MCI) or 1 (Dementia).
+  
+ # Compitability
+ 
+    All codes are compatible with tensorflow version 2.4.1, keras version 2.4.3 and Pyhton 3.8.5.
+ 
+ # How to run PPAD
